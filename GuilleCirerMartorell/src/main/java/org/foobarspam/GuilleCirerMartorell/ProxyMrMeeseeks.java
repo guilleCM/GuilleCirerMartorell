@@ -1,5 +1,10 @@
 package org.foobarspam.GuilleCirerMartorell;
 
-public class ProxyMrMeeseeks {
+import java.util.ArrayList;
 
+public class ProxyMrMeeseeks {
+	
+	public void pushButton(ArrayList<MrMeeseeks> setMrMe) {
+		return;
+	}
 }

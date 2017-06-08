@@ -1,5 +1,7 @@
 package org.foobarspam.GuilleCirerMartorell;
 
+import java.util.ArrayList;
+
 /**
  * Hello world!
  *
@@ -9,10 +11,12 @@ public class AppAlumnado {
 	public static void main( String[] args ){
         
 		// Crea una estructura de datos llamada setMrMe donde almacenar los Mr Meeseeks creados
+		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
 		// Crea una estructura de datos llamada ids donde almacenar los ids de los Mr Meeseeks creados
-		        
+		ArrayList<Integer> ids = new ArrayList<Integer>();
+		
 		ProxyMrMeeseeks box = new ProxyMrMeeseeks();
-		       
+		
 		box.pushButton(setMrMe);
 		System.out.println("Open Jerry's stupid mayonnaise jar");
 		box.getMrMe().formulateRequest("Open", "stupid jar");
