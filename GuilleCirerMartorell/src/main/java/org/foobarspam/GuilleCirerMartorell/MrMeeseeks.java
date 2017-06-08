@@ -2,7 +2,7 @@ package org.foobarspam.GuilleCirerMartorell;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MrMeeseeks {
+public class MrMeeseeks implements Doable {
 	//PROPIEDADES
 	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
 	private Integer id;
@@ -48,10 +48,6 @@ public class MrMeeseeks {
 		System.out.println(this.messageOnExplode+" "+getId());
 	}
 	
-	
-	
-	
-
 	/* generateMessageOnRequest()
 	 * elige al azar uno de los tres mensajes
          * que lanza Mr Meeseeks cuando se le formula
