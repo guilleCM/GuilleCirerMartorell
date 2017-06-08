@@ -1,12 +1,9 @@
 package org.foobarspam.GuilleCirerMartorell;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * Hello world!
- *
- */
-public class AppAlumnado {
+public class App {
 	
 	public static void main( String[] args ){
         
