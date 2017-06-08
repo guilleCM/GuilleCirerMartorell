@@ -14,6 +14,7 @@ public class ProxyMrMeeseeks {
 	public void createMrMeeseeks(ArrayList<MrMeeseeks> setMrMe) {
 		MrMeeseeks mrMeeseeks = new MrMeeseeks();
 		this.mrMeeseeks = mrMeeseeks;
+		setMrMe.add(mrMeeseeks);
 		mrMeeseeks.sayMessageOnCreate();
 	}
 

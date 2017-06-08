@@ -10,6 +10,7 @@ public class MrMeeseeks {
 										 "Yes sireee!",
 										 "Oh, yeah! Yes, ma'am!"};
 	private String messageOnDone = "All done";
+	private String messageOnExplode = "Pooooof";
 	
 	//CONSTRUCTOR
 	public MrMeeseeks(){
@@ -41,6 +42,10 @@ public class MrMeeseeks {
 		System.out.println(generateMessageOnRequest());
 		System.out.println(doRequest(verbo, objeto));
 		sayMessageOnDone();
+	}
+	
+	public void stopExisting() {
+		System.out.println(this.messageOnExplode+" "+getId());
 	}
 	
 	

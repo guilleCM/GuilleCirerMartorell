@@ -40,18 +40,40 @@ public class App {
 			explodeMrMeeseeks(setMrMe, id);   
 		}
 		
+		System.out.println("\nComprobamos que no haya quedado ningún bicho de estos pululando...");
+		System.out.println("Mr Meeseeks en el array ==> "+setMrMe.size());
 	    }
 
 		/* collectIds(setMrMe, ids)
 		 * Almacena en un array los ids de los Mr Meeseeks creados
 		 */
+		public static void collectIds(ArrayList<MrMeeseeks> arrayMrMe, ArrayList<Integer> ids) {
+			for (MrMeeseeks mrMe : arrayMrMe) {
+				ids.add(mrMe.getId());
+			}
+		}
+	
 
 		/* listMrMeeseeks(setMrMe)
 		 * Lista los ids de todos los Mr Meeseeks creados
 		 */
+		public static void listMrMeeseeks(ArrayList<MrMeeseeks> arrayMrMe) {
+			for (MrMeeseeks mrMe : arrayMrMe) {
+				System.out.println(mrMe.getId());
+			}
+		}
 
 		/* explodeMrMeeseeks(setMrMe, id)
 		 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido
 		 */	
+		public static void explodeMrMeeseeks(ArrayList<MrMeeseeks> arrayMrMe, Integer id) {
+			for (MrMeeseeks mrMe : arrayMrMe) {
+				if (mrMe.getId() == id) {
+					mrMe.stopExisting();
+					arrayMrMe.remove(mrMe);
+					break;
+				}
+			}
+		}
 
 }
